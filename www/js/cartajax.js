@@ -1,4 +1,0 @@
-
-function setDefaultImage(){
-    alert();
-}
