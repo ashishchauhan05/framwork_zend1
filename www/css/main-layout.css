@@ -1,0 +1,212 @@
+ 
+            input.typeahead::-webkit-input-placeholder {
+            color: black !important;
+            }
+            input.typeahead::-moz-placeholder { /* Firefox 18- */
+            color: black !important;  
+            }
+            input.typeahead::-moz-placeholder {  /* Firefox 19+ */
+            color: black !important;  
+            }
+            input.typeahead::-ms-input-placeholder {  
+            color: black !important;  
+            }
+            @media only screen and (max-width:480px) {
+            #user-info-top {
+               margin-top: 5px;
+               font-size: 14px;
+               padding: 0px;
+               width: 100%;
+                }
+                .top-bar-social a
+                {
+                font-size:12px;
+                margin-left:3px;
+                }
+                .logomargin
+                {
+                    margin-top: -35px;
+                }
+                .nav-style
+                {
+                    margin-top: -17px;
+                    background: white;
+                    position: absolute;
+                    width: 50%;
+                    z-index: 100;
+                }
+            }
+            @media only screen and (max-width:920px) {
+            
+                .logomargin
+                {
+                    margin-top: -35px;
+                }
+                .nav-style
+                {
+                    margin-top:-35px;
+                    background:#ff9800;
+                    position:absolute;
+                    width:70%;
+                    z-index:100;
+                    left:4%;
+                }
+               
+            }
+             @media only screen and (max-width:765px) {
+            .nav-style
+                {
+                    margin-top : -35px !important;
+                    background : #ff9800;
+                    position : absolute;
+                    width : 60% !important;
+                    z-index : 100;
+                    left : 4% !important;
+                }
+               
+            }
+            .dropdown-menu:nth-child(even){
+                background-color:#eee;
+            }
+    ( )</td><td title='C:\wamp\www\bvs\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr><tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0156</td><td bgcolor='#eeeeec' align='right'>439312</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'C:\wamp\www\bvs\include\header.php'</font>)</td><td title='C:\wamp\www\bvs\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>3</td></tr></table></font>:hover{border:1px solid #DBE515!important}.fa-caret-right{display:none}.link_container:hover .fa-caret-right{display:inherit}
+    .btn:active
+        {
+          box-shadow: none;
+        }
+        .html{
+            font-family: Roboto, Arial, sans-serif !important;
+        }
+            #quick_link{
+               padding:5px;
+               background:#ffffff;
+               border-bottom:solid 1px #ccc;
+               margin-left:4%;
+               margin-right:5%;
+            }
+            #quick_link ul li{
+            display: inline;
+            }
+            #table td{
+            padding: 6px;
+            padding-right: 40px;
+            }
+            #name:placeholder-shown { 
+            color:    #909;
+            }
+
+            .bs-example{
+            font-family: Roboto, Arial, sans-serif;
+            position: relative;
+            margin: 50px;
+            }
+            .twitter-typeahead{
+            width:100% !important;
+            
+            }
+            .typeahead, .tt-query, .tt-hint {
+            width:100% !important;
+            border: 2px solid #CCCCCC;
+            
+            font-size: 12px;
+            height: 30px;
+            line-height: 30px;
+            width: 682px;
+            padding: 8px 12px;
+            width: 396px;
+            }
+            
+            .typeahead {
+            background-color: #FFFFFF;
+            }
+            
+            .typeahead:focus {
+            border: 2px solid #0097CF;
+            }
+            
+            .tt-query {
+            
+            }
+            
+            .tt-hint {
+            color: #000000;
+            }
+            
+            .tt-dropdown-menu {
+            top: 70% !important; 
+            background-color: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            width: 682px;
+            
+            margin-top: 12px;
+            padding: 8px 0;
+            width: 100% !important;
+            }
+            
+            .tt-suggestion {
+            font-size: 14px;
+            line-height: 20px;
+            padding: 3px 20px;
+            color:#000000;
+            }
+            
+            .tt-suggestion.tt-is-under-cursor {
+            background-color: rgba(0, 151, 207, 0);
+            color: #000000;
+            }
+
+            .tt-suggestion p {
+            margin: 0;
+            }
+            ul ul{
+               -webkit-margin-start: 10px;
+               -webkit-margin-end: 0px;
+               -webkit-padding-start: 0px;
+               -webkit-padding-after: 10px; 
+            }
+           @media (min-width: 768px){
+            .modal-dialog {
+                          width: 800px !important;
+                          margin: 90px auto !important;
+                          }
+            } 
+
+            .navbar-inverse {
+
+        }
+        .dropdown:hover .dropdown-menu {
+           display: block;
+        }
+        .nav-ontop{
+            padding-left: 32px !important;
+            padding-right: 32px !important;
+        }
+
+        .toaster .alert-true {
+            background-color: rgba(14, 14, 14, 0.88) !important;
+        }
+
+        .toaster .alert-false {
+            background-color: gold !important;
+        }
+
+        .toaster .message {
+            margin-top: 4px;
+            position: absolute;
+            padding-left: 10px;
+        }
+        .search-form
+        {
+            padding:0px;margin-left:-3%;
+        }
+        @media (max-width: 480px){
+            .search-form
+            {
+                margin-left: 0px;
+            }
+        }     
+        .option6{
+              background-image: url("../bg.png");
+        }
+        .fa-heart{
+            color: #9E9E9E !important;
+        }

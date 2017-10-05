@@ -1,0 +1,79 @@
+<?php
+if(!function_exists("parsePaginatorParameters")){
+	function parsePaginatorParameters($parameters=array(), $parents=array()) {
+		$parsedParameters = "";
+		
+		if ($parameters === null) return $parsedParameters;
+
+		foreach ($parameters as $key=>$value) {
+			if (!is_array($value)) {
+				$parameterKey = "";
+				foreach ($parents as $parentParameter) {
+					$parameterKey .= $parameterKey ? sprintf("[%s]", $parentParameter) : $parentParameter;
+				}
+				$parameterKey .= $parameterKey ? sprintf("[%s]", is_int($key) ? "" : $key) : $key;
+				
+				$parsedParameters .= sprintf("%s=%s&amp;", $parameterKey, $value);
+			} else {
+				$parsedParameters .= parsePaginatorParameters($value, array_merge($parents, array($key)));
+			}
+		}
+		
+		return $parsedParameters;
+	}
+}	
+	try {
+		$paginatorParams = Zend_Registry::get('paginatorParams');
+	} catch(Exception $e) {
+		$paginatorParams = array();
+	}
+
+	try {
+		$paginatorLabel = Zend_Registry::get('paginatorLabel');
+	} catch(Exception $e) {
+		$paginatorLabel = array();
+	}
+
+	try {
+		$paginatorLite = Zend_Registry::get('paginatorLite');
+	} catch(Exception $e) {
+		$paginatorLite = false;
+	}
+
+	try {
+		$paginatorPageTitles = Zend_Registry::get('paginatorPageTitles');
+	} catch(Exception $e) {
+		$paginatorPageTitles = array();
+	}
+
+	$paramString = parsePaginatorParameters($paginatorParams, array());
+	Zend_Registry::set('paginatorParamsString', $paramString);
+?>
+<div class="pagination">
+<?if ($paginatorLabel):?>
+	<?if(is_array($paginatorLabel)):?>
+		<?if($this->totalItemCount == 1):?>
+			<span class="label" >(<?=$this->totalItemCount?> <?=$paginatorLabel[0]?>)</span>
+		<?else:?>
+			<span class="label" >(<?=$this->totalItemCount?> <?=$paginatorLabel[1]?>)</span>
+		<?endif?>	
+	<?else:?>
+		<span class="label" >(<?=$this->totalItemCount?> <?=$paginatorLabel?>)</span>
+	<?endif?>	
+<?endif?>
+<? if ($this->pageCount>1): ?>
+
+	<? if (isset($this->previous) && !$paginatorLite): ?>
+		<a href="?<?=$paramString?>page=<?=$this->first?>" page="<?=$this->first?>" >First</a>
+  		<a href="?<?=$paramString?>page=<?=$this->previous?>" page="<?=$this->previous?>" >Prev</a>
+	<? endif; ?>
+
+	<? foreach ($this->pagesInRange as $page): ?>
+		<a href="?<?=$paramString?>page=<?=$page?>"<?if ($page == $this->current):?> class="current"<?endif?> page="<?=$page?>"><?=isset($paginatorPageTitles[$page]) ? $paginatorPageTitles[$page]:$page?></a>
+	<? endforeach; ?>
+	<? if (isset($this->next) && !$paginatorLite): ?>
+		<a href="?<?=$paramString?>page=<?=$this->next?>" page="<?=$this->next?>" >Next</a>
+		<a href="?<?=$paramString?>page=<?=$this->last?>" page="<?=$this->last?>" >Last</a>
+	<? endif; ?>
+<? endif; ?>
+</div>

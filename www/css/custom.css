@@ -1,0 +1,151 @@
+ 
+ /*confirm box for delete*/
+
+.delete_message h2
+{
+    font-size: 20px;
+}
+
+  .delete_message
+{
+    display: none;
+    position: fixed;
+    top: 0px;
+    width: 37%;
+    margin-left: 20%;
+    height: 125px;
+    background-color:#009688;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.44);
+    border-radius: 5px;
+    margin-top: 2px;
+}
+#cancel_order h2
+{
+    color:#0431B4;
+}
+ .cancel_order
+{
+    display: none;
+    position: fixed;
+    top: 32%;
+    width: 40%;
+    margin-left: 20%;
+    height: 158px;
+    background-color: #f5f5f5;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.44);
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.delete_addresses{
+    display: none;
+    position: fixed;
+    top: 5%;
+    width: 40%;
+    margin-left: 25%;
+    height: 158px;
+    background-color: #fff;
+    text-align: center;
+    z-index: 1;
+    box-shadow: 10px 10px 5px rgba(136, 136, 136, 0.44);
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+.delete{
+  margin-top:5%; 
+  border:none;
+    background:none;
+    width:100px;
+    height:40px;
+    font-size:18px;
+    border-radius:5px;
+    border:2px solid white;
+    margin:10px;
+    color:#CED8F6; 
+}
+
+#cancel
+{
+    border:none;
+    background:none;
+    width:100px;
+    height:40px;
+    font-size:18px;
+    border-radius:5px;
+    border:2px solid white;
+    margin:10px;
+    color:#CED8F6;
+}
+#cancels{
+    padding: 9px;
+    padding-left: 32px;
+    padding-right: 30px;
+}
+h1
+{
+    text-align:center;
+    margin-top:200px;
+    color:#819FF7;
+    width:600px;
+    margin-left:200px;
+}
+
+.btn-success:hover, .btn-success:focus{
+  background-color: #ffc107;
+}
+p{
+  line-height: 20px;
+}
+.ribbon:hover { 
+  background-color: rgb(255, 141, 7);
+ }
+.collapsed:hover{
+  color:#fff;
+ }
+ .bread{
+  margin-left: 0px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 0px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.53);
+  border-radius: 0px;
+  transition: 0.3s;
+ }
+ .hot-deals-row{
+    font-family: Roboto, Arial, sans-serif;
+ }
+ h1 {
+    margin-left: 15px;
+    margin-bottom: 20px;
+ }
+ @media (min-width: 768px) {
+    .brand-pills > li > a {
+        border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+ }
+ li.brand-nav.active a:after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top:25px solid transparent;
+    border-bottom:25px solid transparent;
+    border-left:25px solid #666;
+    position:absolute;
+    top:50%;
+    margin-top:-25px;
+    left: 100%;
+    z-index: 2;
+ }
+ .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+      background-color: #666 !important;
+    }
+ }
+
+
+
+/*confirm box for delete */
+/*end*/

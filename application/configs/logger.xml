@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logger>
+	<writer>
+		<name>My_Log_Writer_Db</name>
+		<params>
+			<table>error_logs</table>
+			<columnMap>
+				<time>timestamp</time>
+				<error_type>priorityName</error_type>
+				<user_id>userId</user_id>
+				<custom_message>message</custom_message>
+				<database_message>databaseMessage</database_message>
+				<dump>dump</dump>
+			</columnMap>
+		</params>
+		<filters>
+			<filter>My_Log_Filter_Errors</filter>
+		</filters>
+	</writer>
+	<writer>
+		<name>My_Log_Writer_Firebug</name>
+		<params></params>
+		<filters></filters>
+	</writer>
+</logger>

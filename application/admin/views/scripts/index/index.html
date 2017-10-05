@@ -1,0 +1,228 @@
+<link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/admin/css/theme-default.css">   
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>                    
+    <li class="active">Dashboard</li>
+</ul>
+<div class="page-content-wrap">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="widget widget-default widget-item-icon" onclick="location.href='#';">
+                                <div class="widget-item-left">
+                                    <span class="fa fa-envelope"></span>
+                                </div>                             
+                                <div class="widget-data">
+                                    <div class="widget-int num-count"><?=count($this->claimData); ?></div>
+                                    <div class="widget-title">New messages</div>
+                                    <div class="widget-subtitle">In your mailbox</div>
+                                </div>      
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+                                </div>
+                            </div>                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget widget-default widget-item-icon" onclick="location.href='#';">
+                                <div class="widget-item-left">
+                                    <span class="fa fa-user"></span>
+                                </div>
+                                <div class="widget-data">
+                                    <div class="widget-int num-count"><?=count($this->userData); ?></div>
+                                    <div class="widget-title">Registred users</div>
+                                    <div class="widget-subtitle">On your website</div>
+                                </div>
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="top" title="Remove Widget"><span class="fa fa-times"></span></a>
+                                </div>                            
+                            </div>                            
+                        </div>
+                        <div class="col-md-4">
+                            <div class="widget widget-danger widget-padding-sm">
+                                <div class="widget-big-int plugin-clock">00:00</div>                            
+                                <div class="widget-subtitle plugin-date">Loading...</div>
+                                <div class="widget-controls">                                
+                                    <a href="#" class="widget-control-right widget-remove" data-toggle="tooltip" data-placement="left" title="Remove Widget"><span class="fa fa-times"></span></a>
+                                </div>                            
+                                <div class="widget-buttons widget-c3">
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-clock-o"></span></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-bell"></span></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#"><span class="fa fa-calendar"></span></a>
+                                    </div>
+                                </div>                            
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                         <div id="alert_holder"></div>
+                                <div class="calendar">  
+                                  <div id="calendar"></div>                            
+                                </div>    
+                        </div>
+                        <div class="col-md-4" style="margin-top:35px;">
+                            
+                            <!-- START PROJECTS BLOCK -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Messages Section</h3>
+                                        <span>All Messages</span>
+                                    </div>                                    
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body panel-body-table">
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th width="50%">Message Section</th>
+                                                    <th width="20%" style="text-align:center;">View</th>
+                                                    <th width="30%">Activity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Contact Query</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/contact"><span class="label label-danger">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:95%;">95%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                                                                
+                                                <tr>
+                                                    <td><strong>Training Panel</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/training-panel"><span class="label label-warning">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">98%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Recovery Panel</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/data-recovery"><span class="label label-success">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Users Panel</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/users"><span class="label label-success">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>                                                
+                                                <tr>
+                                                    <td><strong>Dealers Panel</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/dealer"><span class="label label-success">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">100%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- END PROJECTS BLOCK -->
+                            
+                        </div>
+                        <div class="col-md-4" style="margin-top:7%;">
+                            
+                            <!-- START PROJECTS BLOCK -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title-box">
+                                        <h3>Part Request Section</h3>
+                                        <span>Part Requests</span>
+                                    </div>                                    
+                                    <ul class="panel-controls" style="margin-top: 2px;">
+                                        <li><a href="#" class="panel-fullscreen"><span class="fa fa-expand"></span></a></li>
+                                        <li><a href="#" class="panel-refresh"><span class="fa fa-refresh"></span></a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span></a>                                        
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#" class="panel-collapse"><span class="fa fa-angle-down"></span> Collapse</a></li>
+                                                <li><a href="#" class="panel-remove"><span class="fa fa-times"></span> Remove</a></li>
+                                            </ul>                                        
+                                        </li>                                        
+                                    </ul>
+                                </div>
+                                <div class="panel-body panel-body-table">
+                                    
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th width="50%">Part Request Section</th>
+                                                    <th width="20%" style="text-align:center;">View</th>
+                                                    <th width="30%">Activity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                
+                                                <tr>
+                                                    <td><strong>Part Requests</strong></td>
+                                                    <td><a href="<?=$this->getBaseUrl()?>/admin/claim"><span class="label label-warning">View All</span></a></td>
+                                                    <td>
+                                                        <div class="progress progress-small progress-striped active">
+                                                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:98%;">98%</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>                                                
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- END PROJECTS BLOCK -->
+                            
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- START DASHBOARD CHART -->
+                    <div class="block-full-width">
+                        <div id="dashboard-chart" style="height: 250px; width: 100%; float: left;"></div>
+                        <div class="chart-legend">
+                            <div id="dashboard-legend"></div>
+                        </div>                                                
+                    </div>                    
+                    <!-- END DASHBOARD CHART -->
+                    
+                </div>
+
+
+<script type="text/javascript" src="<?=$this->getBaseUrl() ?>/www/admin/js/plugins/sparkline/jquery.sparkline.min.js"></script>
+<script type="text/javascript" src="<?=$this->getBaseUrl() ?>/www/admin/js/plugins/knob/jquery.knob.min.js"></script>
+<script type="text/javascript" src="<?=$this->getBaseUrl() ?>/www/admin/js/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+
+

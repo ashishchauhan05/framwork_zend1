@@ -1,0 +1,1218 @@
+
+<!DOCTYPE html>
+<html lang="en">        
+    <head>            
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta content="text/html; charset=utf-8" />
+     <meta name='baseUrl' id='baseUrl' value='<?= $this->getBaseUrl() ?>' />
+     <title>Laptop Engineers</title>
+      <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/lib/bootstrap/css/bootstrap.min.css" />
+      <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/lib/bootstrap/css/scrolling-nav.css" />
+      <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/css/customstyle.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/lib/font-awesome/css/font-awesome.min.css" />        
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/lib/owl.carousel/owl.carousel.css" />
+        <link href="<?= $this->getBaseUrl() ?>/www/dist1/css/bootstrap-material-design.css" rel="stylesheet">
+        <style type="text/css">
+            .option6{
+                 background-image: url("<?=$this->getBaseUrl()?>/www/bg.png"); 
+            }
+        </style>
+        <style type="text/css">
+            
+input::-webkit-input-placeholder {
+color: red !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+color: red !important;  
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+color: red !important;  
+}
+input:-ms-input-placeholder {  
+color: red !important;  
+}
+.dropdown:hover .dropdown-menu {
+ display: block;
+ margin-top: -20; // remove the gap so it doesn't close
+}
+a {
+    cursor: pointer;
+    color:#6A5656;
+}
+input.typeahead::-webkit-input-placeholder {
+color: black !important;
+}
+input.typeahead::-moz-placeholder { /* Firefox 18- */
+color: black !important;  
+}
+input.typeahead::-moz-placeholder {  /* Firefox 19+ */
+color: black !important;  
+}
+input.typeahead::-ms-input-placeholder {  
+color: black !important;  
+}
+@media only screen and (max-width:480px) {
+   #user-info-top {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 0px;
+    width: 100%;
+    }
+    .top-bar-social a
+    {
+    font-size:12px;
+    margin-left:3px;
+    }
+    .logomargin
+    {
+        margin-top: -35px;
+    }
+    .nav-style
+    {
+        margin-top: -17px;
+        background: white;
+        position: absolute;
+        width: 50%;
+        z-index: 100;
+    }
+}
+@media only screen and (max-width:920px) {
+
+    .logomargin
+    {
+        margin-top: -35px;
+    }
+    .nav-style
+    {
+        margin-top: -17px;
+        background: #ff9800;
+        position: absolute;
+        width: 20%;
+        z-index: 100;
+    }
+   
+}
+ @media only screen and (max-width:765px) {
+.nav-style
+    {
+          margin-top: 2px;
+          background: #ff9800;
+          position: absolute;
+          width: 50%;
+          z-index: 100;
+          left: 5%;
+    }
+}
+.dropdown-menu:nth-child(even){
+ background-color: #eee;
+}
+.btn:active
+{
+box-shadow: none;
+}
+.html{
+font-family: Roboto, Arial, sans-serif !important;
+}
+#quick_link{
+padding: 5px;
+background: #ffffff;
+border-bottom: solid 1px #ccc;
+margin-left: 4%;
+margin-right: 5%;
+}
+#quick_link ul li{
+display: inline;
+}
+#table td{
+padding: 6px;
+padding-right: 40px;
+}
+#name:placeholder-shown { 
+color:    #909;
+}
+.bs-example{
+font-family: Roboto, Arial, sans-serif;
+position: relative;
+margin: 50px;
+}
+.twitter-typeahead{
+width:100% !important;
+
+}
+.typeahead, .tt-query, .tt-hint {
+width:100% !important;
+border: 2px solid #CCCCCC;
+
+font-size: 12px;
+height: 30px;
+line-height: 30px;
+width: 682px;
+padding: 8px 12px;
+width: 396px;
+}
+
+.typeahead {
+background-color: #FFFFFF;
+}
+
+.typeahead:focus {
+border: 2px solid #0097CF;
+}
+
+.tt-query {
+
+}
+
+.tt-hint {
+color: #000000;
+}
+
+.tt-dropdown-menu {
+top: 70% !important; 
+background-color: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.2);
+width: 682px;
+
+margin-top: 12px;
+padding: 8px 0;
+width: 100% !important;
+}
+
+.tt-suggestion {
+font-size: 14px;
+line-height: 20px;
+padding: 3px 20px;
+color:#000000;
+}
+
+.tt-suggestion.tt-is-under-cursor {
+background-color: rgba(0, 151, 207, 0);
+color: #000000;
+}
+
+.tt-suggestion p {
+margin: 0;
+}
+ul ul{
+   -webkit-margin-start: 10px;
+   -webkit-margin-end: 0px;
+   -webkit-padding-start: 0px;
+   -webkit-padding-after: 10px; 
+}
+@media (min-width: 768px){
+.modal-dialog {
+              width: 750px !important;
+              margin: 70px auto !important;
+              }
+}  
+.navbar-inverse {
+
+}
+.nav-ontop{
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+
+.toaster .alert-true {
+    background-color: rgba(14, 14, 14, 0.88) !important;
+}
+
+.toaster .alert-false {
+    background-color: gold !important;
+}
+
+.toaster .message {
+    margin-top: 4px;
+    position: absolute;
+    padding-left: 10px;
+} 
+        </style>
+        <link href="<?= $this->getBaseUrl() ?>/www/dist1/css/ripples.min.css" rel="stylesheet">
+        <script src="<?= $this->getBaseUrl() ?>/www/include/jquery.min.js"></script>
+        <script src="<?=$this->getBaseUrl(); ?>/www/js/jquery-1.11.1.min.js"></script>
+        <script src="<?=$this->getBaseUrl(); ?>/www/dist1/js/ripples.min.js"></script>
+        <script src="<?=$this->getBaseUrl(); ?>/www/dist1/js/material.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/homestyle.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/css/layout.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/style.css" /> 
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/responsive.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/option6.css" /> 
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/style1.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/assets/css/login.css" />
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/css/custom.css">
+        <link rel="stylesheet" type="text/css" href="<?= $this->getBaseUrl() ?>/www/css/product-style.css" />
+        <link rel='shortcut icon' href="<?= $this->getBaseUrl() ?>/www/settings.png" />
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/jquery.elevatezoom.js"></script>
+        <link rel="stylesheet" href="<?= $this->getBaseUrl() ?>/www/include/bootstrap-theme.min.css">
+        <script src="<?= $this->getBaseUrl() ?>/www/typeahead.min.js"></script>
+        <script src="<?= $this->getBaseUrl() ?>/www/js/cartajax.js"></script>
+        <style>( )</td><td title='C:\wamp\www\bvs\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>0</td></tr><tr><td bgcolor='#eeeeec' align='center'>2</td><td bgcolor='#eeeeec' align='center'>0.0156</td><td bgcolor='#eeeeec' align='right'>439312</td><td bgcolor='#eeeeec'>include_once( <font color='#00bb00'>'C:\wamp\www\bvs\include\header.php'</font>)</td><td title='C:\wamp\www\bvs\index.php' bgcolor='#eeeeec'>..\index.php<b>:</b>3</td></tr></table></font>:hover{border:1px solid #DBE515!important}.fa-caret-right{display:none}.link_container:hover .fa-caret-right{display:inherit}
+        </style> 
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/bootstrap/js/scrolling-nav.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/bootstrap/js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/select2/js/select2.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/owl.carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/countdown/jquery.plugin.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/countdown/jquery.countdown.js"></script>
+        <!-- ./COUNTDOWN -->
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/lib/fancyBox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/js/jquery.actual.min.js"></script>
+        <script type="text/javascript" src="<?= $this->getBaseUrl() ?>/www/assets/js/theme-script.js"></script>
+        <script src="<?= $this->getBaseUrl() ?>/www/js/jquery.toaster.js"></script>
+    </head>
+    <body class="option6">
+        <div class="loader">
+        </div>
+        <!-- HEADER -->
+        <div id="header" class="header">
+            <div class="top-header">
+                <div class="container">
+                    <div class="col-md-1 hidden-xs"></div>
+                    <div id="user-info-top" class="user-info pull-left col-md-3 col-xs-12" style="margin-top:5px;text-align:left;">
+                        
+                    </div>
+                    <div id="user-info-top" class="user-info pull-right col-md-8 col-xs-12" style="margin-top:5px;text-align:right;">
+                      <div class="support-link hidden-xs" style="float:none">
+                         <a href="<?= $this->getBaseUrl() ?>/index/dealer-registration" style='z-index:99; font-family:Roboto,Arial,sans-serif;border-left: 1px solid #fff;padding-left:10px;'>Dealer Registration</a> 
+                      </div>
+                      <div class="support-link hidden-xs" style="float:none">
+                        <a href="<?= $this->getBaseUrl() ?>/index/contact-us" style='z-index:99; font-family:Roboto, Arial, sans-serif;'>Contact Us</a> 
+                      </div>
+                     <?php  if(isset($this->auth_user)) { 
+                        $name = explode(' ',trim($this->auth_user['name']));
+                     ?>
+                    <div class="dropdown">
+                        <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style='z-index:99; font-family:Roboto, Arial, sans-serif;'>
+                        Hi <?= (strlen($this->auth_user['name']) > 7) ? substr($this->auth_user['name'], 0, 7) . '..': $this->auth_user['name'] ;?><span></span></a>
+                        <ul class='dropdown-menu mega_dropdown'  role='menu' style='z-index:9999;font-family:Roboto, Arial, sans-serif;'>
+                            <li><a href='<?= $this->getBaseUrl() ?>/user'>Account</a></li>
+                            <li><a href='<?= $this->getBaseUrl() ?>/user/orders'>My Orders</a></li>
+                            <li><a href='<?= $this->getBaseUrl() ?>/user'>Wallet</a></li>
+                            <li><a href='<?= $this->getBaseUrl() ?>/user/orders'>Track Order</a></li>
+                            <li><a href='<?= $this->getBaseUrl() ?>/login/logout'>Logout</a></li>
+                        </ul>
+                       </div> 
+                       <?php } else { ?>
+                       <div class="support-link hidden-xs" style="float:none">
+                          <a data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href=''>Login</a>
+                        </div>
+                        <?php } ?>
+                       </div> 
+                       <div class="col-xs-3 col-xs-offset-9">
+                           <div class="dropdown hidden-sm hidden-md hidden-lg">
+                        <?php  if(isset($this->auth_user)) { 
+                        $name = explode(' ',trim($this->auth_user['name']));  ?>
+                        <a class="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-plus" aria-hidden="true" style="font-size:18px;"></i></a>
+                        <ul class='dropdown-menu mega_dropdown'     role='menu' style='z-index:9999'>
+                        </ul>
+                        <?php } else { ?>
+
+                            <a class="hidden-sm hidden-md hidden-lg pull-right"  data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" href=''><i class="fa fa-user" aria-hidden="true" style="font-size:20px"></i></a>
+                            
+                        <?php } ?>
+                    </div> 
+                           <div class="hidden-md hidden-lg hidden-sm" style="float:right">
+                    <a href="<?=$this->getBaseUrl() ?>/shopping-cart" style="width:10px">
+                        <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size:20px">
+                            <span class="notify notify-right cart_count" id=""><?= isset($this->cartCount) ? $this->cartCount : 0   ?></span>
+                        </i>
+                        </a>
+                   </div>
+                  </div>
+                </div>
+            </div>
+            <!--/.top-header -->
+            <!-- MAIN HEADER -->
+            <div class="container main-header">
+            <div class="nav-collapse collapse" style="position:initial;">
+             <ul class="nav navbar-nav nav-style" >
+                <li class="dropdown" style="background: #e8e8e8 !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>" ><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                </li>
+                <?php foreach($this->data['category'] as $key => $menu) {  ?>
+                <li class="dropdown" style="background: #fff !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/category/main-category?menu=<?= base64_encode($menu['mid'])?>" > <i class="fa fa-chevron-right" aria-hidden="true"></i> <?= $menu['menu']  ?></a><?php if(isset($menu['sub_menu'])) { ?>
+                    <?php } ?>
+                </li>
+                <?php } ?>
+                <li class="dropdown" style="background: #fff !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/shopping-cart" > <i class="fa fa-chevron-right" aria-hidden="true"></i> My Cart</a>
+                </li>
+                <?php  if(isset($this->auth_user)) { ?>
+                <li class="dropdown" style="background: #fff !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/user" > <i class="fa fa-chevron-right" aria-hidden="true"></i> My Account</a>
+                </li>
+                <li class="dropdown" style="background: #fff !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/user/orders" > <i class="fa fa-chevron-right" aria-hidden="true"></i> My Orders</a>
+                </li>
+                <li class="dropdown" style="background: #fff !important;">
+                    <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/login/logout" > <i class="fa fa-chevron-right" aria-hidden="true"></i> Logout</a>
+                </li>
+                <?php } ?>
+               </ul>
+            </div>
+            <div class="row" style="margin-top:-1%;margin-bottom:1%;">
+                    <div class="col-sm-2 col-md-2 col-lg-2 logomargin hidden-xs">
+                        <a href="<?= $this->getBaseUrl() ?>">
+                            <img  src="<?= $this->getBaseUrl() ?>/www/img/Logo10.png" alt="logo" style="margin-left: 0%;width: 180px;" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="col-xs-1 hidden-sm hidden-md hidden-lg">
+                    <div class="navbar" style="min-height:auto;margin-bottom:0px">
+                        <div class="navbar-inner">
+                            <div class="container">
+                              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse" style="margin-top: -45px;background: transparent;padding:10px 0px;"><i class="glyphicon glyphicon-th-list" style="font-size:18px"></i>
+                              </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-xs-offset-0 col-sm-offset-0 col-xs-5 col-sm-3 col-sm-offset-3 col-md-2 col-md-offset-0 logomargin hidden-sm hidden-md hidden-lg" style="padding-left:0px;margin-left: 10px;">
+                        <a href="<?= $this->getBaseUrl() ?>">
+                            <img  src="<?= $this->getBaseUrl() ?>/www/img/Logo10.png" alt="logo" style="margin-left:5%;width:70%;" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-md-9 col-lg-9 header-search-box hidden-xs" style="padding: 0px;">
+                        <!-- search -->
+                        <div id="content" style="box-shadow:none;">          
+                            <form class="form-inline" id="searchProduct" method="post" action="" style="width:95%;background-color:white;color:red;">
+                                <div class="input-serach" style="width: 85%;" >
+                                    <input type="text" id="autoUpdate" name="typeahead"  class="typeahead tt-query" style="font-family:Roboto,Arial,sans-serif;opacity: 0.9;" spellcheck="false"  placeholder="Search for products, brands and more..">
+                                </div>
+                                <button type="button" name="submit" id="submit1" class="pull-right btn-search" style="color:#fff;background:rgba(51, 51, 51, 0.34);"> Search</button>
+                            </form>
+                            <div style="width:100%" id="display"  class="dropdown-menu mega_dropdown">
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-sm-offset-0 col-xs-11 col-sm-6 col-md-8 col-md-offset-0 header-search-box hidden-sm hidden-md hidden-lg" style="padding: 0px;padding-right: 4%;float: right;margin-top: -12px;    margin-bottom: 5px;">
+                        <!-- search -->
+                        <div id="content" style="box-shadow:0 2px 2px 0 rgba(0,0,0,.23);">          
+                            
+                            <form class="form-inline" id="searchProduct" method="post" action="" style="width:100%;background-color:white;color:red;">
+                                
+                                <div class="input-serach" style="width: 89%;float: right;" >
+                                    <input type="text" id="autoUpdate" name="typeahead"  class="typeahead tt-query" style="font-family: Roboto,Arial,sans-serif;opacity: 0.3;" spellcheck="false"  placeholder="Search for products, brands and more..">
+                                    
+                                </div>
+                                <button type="button" name="submit" id="submit1" class="pull-right btn-search" style="color:#fff;background:#fff;margin-right: 85%;" > <i class="fa fa-search" aria-hidden="true" style="font-size:20px;color: #000;"></i></button>
+                                
+                            </form>
+                            
+                            <div style="width:100%" id="display"  class="dropdown-menu mega_dropdown"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 col-md-1 col-lg-1 group-button-header hidden-xs">
+                        <div class="cart" style="background-color: #009688;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.23),inset 1px 1px 0 0 hsla(0,0%,100%,.2);padding: 10px 0;text-align: center;color: #000;height: 41px;border-radius: 2px;font-weight: 500;float:right;margin-top: 0px;width: 120px;display: inline-block;">
+                            <i class="fa fa-shopping-cart" aria-hidden="true" style="color:#fff;"></i>
+<a href="<?= $this->getBaseUrl() ?>/shopping-cart" style="color:#fff;">Cart &nbsp;&nbsp;<span  class="cart_count"><?= isset($this->cartCount) ? $this->cartCount : 0   ?></span></a>
+                        </div>
+                  </div>
+            </div>
+            <!-- END MANIN HEADER -->
+<div id="nav-top-menu" class="nav-top-menu hidden-xs hidden-sm">
+<div class="row">
+<div id="main-menu" class="col-md-12 col-sm-12 col-lg-12 main-menu">
+<div class="container-fluid container">
+<nav class="navbar navbar-default navbar-inverse hidden-xs" role="navigation" style="border-radius:5px 5px 0 0;">
+ <div class="container-fluid"  style="padding-left:5%">
+  <div class="navbar-header">
+    <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a href="#" class="navbar-brand">Menu</a>
+  </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+     <ul class="nav navbar-nav">
+       <li class="dropdown" style="margin-right: 5px">
+        <a class="dropdown-toggle" href="<?=$this->getBaseUrl() ?> "> <i class="fa fa-home fa-lg"></i>
+          </a></li>
+           <?php foreach($this->data['category'] as $key => $value) {  if($key > 3) {break;} ?>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/category/main-category?menu=<?= base64_encode($value['mid'])?>">
+              <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;"><?= $value['menu'] ?>
+                </span>
+              <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a><?php if(isset($value['sub_menu'])) { ?>
+              <div class="row dropdown-menu mega_dropdown" role="menu" style="left:0;width:100%;height:300px;">
+                <?php if ($value['sub_menu']) { foreach($value['sub_menu'] as $keySub => $valueSub) {  ?>
+                    <div class="block-container col-sm-3 col-md-3 col-lg-3">
+                        <a href="<?= $this->getBaseUrl(); ?>/category?menu=<?= base64_encode($value['mid']) ?>&submenu=<?= base64_encode($valueSub['sid'])?>" style="border-color:#fff;line-height:5px;color:#212121;text-transform: none;font-family:Roboto, Arial,sans-serif;font-size:13px;font-weight:600;margin-left:5% !important;">
+                            <span><?= $valueSub['sub_menu'] ?></span>
+                        </a>
+                        <div class="row" style="-webkit-margin-start:0px;height:300px;"><i class="fa fa-caret-right"></i>
+                          <?php if($valueSub['category']){ foreach($valueSub['category'] as $keyCat => $valueCat) { if($keyCat > 10){ break; }  ?>
+                            <div class="col-sm-12 col-md-12 col-lg-12 link_container" style="font-style:normal;height:25px;padding-top: 3px;font-family:Roboto, Arial, sans-serif;float:left;" id="test1">
+                                <a style="font-size:13px !important;"  href="<?= $this->getBaseUrl(); ?>/category/category?menu=<?= base64_encode($value['mid']) ?>&submenu=<?= base64_encode($valueSub['sid'])?>&category=<?= base64_encode($valueCat['cid'])?>"><?= $valueCat['category'] ?><i class="fa fa-caret-right"></i>
+                                </a>
+                            </div> 
+                          <?php } } ?> 
+                        </div>
+                    </div>
+                  <?php } } else { ?> 
+                    <div class="block-container col-sm-12 col-md-12 col-lg-12 col-xs-12">
+                          <div class="block" style="text-align:center;">
+                            <div class="link_container group_header">
+                                <a href="#" style="border-color:#fff;line-height:5px;color:#212121;text-transform: none;font-family:Roboto, Arial, sans-serif;font-size:13px;"><span>No Category Found !!</span>
+                                </a>
+                            </div>
+                          </div>    
+                    </div>
+                  <?php } ?>   
+                </div>
+            <?php } else { ?>
+             <ul class="dropdown-menu mega_dropdown" role="menu" style="left:0;width:100%">
+                    <li class="block-container col-sm-3 col-xs-12">
+                        <ul class="block">
+                            <li class="link_container group_header">
+                                <a href="#" style="border-color:#fff;line-height:5px;color:#212121;text-transform: none;font-family:Roboto, Arial, sans-serif;font-size:13px;"><span>No Category Found !!</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <?php } ?>
+           </li>
+           <?php } ?>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/index/contact-us">
+                <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;">Data Recovery
+                </span>
+                <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/training">
+                <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;">Training
+                </span>
+                <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/category/main-category?menu=<?= base64_encode($value['mid'])?>">
+                <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;">Downloads
+                </span>
+                <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/category/main-category?menu=<?= base64_encode($value['mid'])?>">
+                <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;">Parts Request
+                </span>
+                <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a>
+           </li>
+           <li class="dropdown">
+             <a class="dropdown-toggle" href="<?= $this->getBaseUrl(); ?>/category/main-category?menu=<?= base64_encode($value['mid'])?>">
+                <span style="font-family:Roboto, Arial, sans-serif;font-size:14px;text-transform:uppercase;font-weight:500;">Repair Videos
+                </span>
+                <i class="fa fa-chevron-down" aria-hidden="true" style="padding-left:5px;font-size:10px;"></i></a>
+           </li>
+        </ul>       
+       </div>
+      </div>
+     </nav>
+    </div>
+    </div>
+   </div>                                                          
+  </div>
+  </div>
+  </div>
+     <!-- page loader -->
+<!-- <img src="<?=$this->getBaseUrl() ?>/www/store/l1.gif" id="loader" style="margin-left: 39%;position: fixed;margin-top: 5%;z-index: 5000;display: none;"> -->
+
+<img src="<?=$this->getBaseUrl() ?>/www/img/loader1.gif" id="loader1" style="margin-left: 39%;position:fixed;margin-top:10%;z-index:5000;display:none;height:100px;width:100px;">
+<img src="<?=$this->getBaseUrl() ?>/www/images/loader3.gif" id="loader3" style="margin-left:50%;position:fixed;margin-top:13%;z-index:5000;display:none;height:200px;width:200px;">
+<img src="<?=$this->getBaseUrl() ?>/www/images/loader3.gif" id="loader4" style="margin-left:50%;position:fixed;margin-top:13%;z-index:5000;display:none;height:200px;width:200px;">
+<img src="<?=$this->getBaseUrl() ?>/www/images/loader3.gif" id="loader5" style="margin-left:50%;position:fixed;margin-top:13%;z-index:5000;display:none;height:200px;width:200px;">
+<img src="<?=$this->getBaseUrl() ?>/www/images/loader3.gif" id="loader6" style="margin-left:50%;position:fixed;margin-top:13%;z-index:5000;display:none;height:200px;width:200px;">
+<!-- <img src="<?=$this->getBaseUrl() ?>/www/images/loading_icon.gif" id="loader2" style="margin-left: 39%;position:fixed;margin-top:10%;z-index:5000;display:none;height:100px;width:100px;"> -->
+</div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content" style="background:#fff;">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+</div>
+<div class="row login" id="login2">
+<h4 id="heading" style="text-align:center;font-weight:300;">Login Here</h4>
+<div class="col-md-6" style="border-right:1px solid #eee;line-height: 15px;margin-bottom:5%"> 
+<div class="modal-body">
+<img src="<?=$this->getBaseUrl() ?>/www/images/loader3.gif" id="loader4" style="margin-left:8%;position:fixed;margin-top:6%;z-index:5000;display:none;height:200px;width:200px;">
+<form method="post" action="" id="login-form">
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Email/Mobile</label>
+ <input type="email" class="form-control" name="username" id="login_email" >
+ <div class="msg" id="email_error_js" style="color:red"></div>
+</div>
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Password</label>
+ <input type="password" class="form-control" name="password" id="login_password" >
+ <div id="login_password_error" style="color:red"> </div>
+</div>
+<div class="form-group group">
+<button type="submit" class=" btn btn-raised btn-success" id="login-btn" style="background:#009688;width:100%;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+">Login</button>  
+</div>
+
+<div class="form-group group">
+<a style="float:right;font-family:Roboto, Arial, sans-serif;" class="a8" id="forget" href="#">Forgot password?</a>
+<a style="float:left;font-family:Roboto, Arial, sans-serif;" class="a8" id="signup4" style="color:green;" href="#">Register Here !</a>
+
+</div>
+</form>
+</div>
+</div>
+<span class="signup-seperator">OR</span>
+<div class="col-md-5 social" style="margin-top:1%;margin-left:3%;">
+<div class="form-group group">
+<button type="button" class=" btn btn-raised" style="width:100%;background:#2e6da4;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+"><i class="fa fanew fa-facebook" aria-hidden="true" ></i>&nbsp;
+Sign In With Facebook</button>
+</div>
+<div class="form-group group" style="margin-top:16%;">
+<button type="button" class=" btn btn-raised btn-primary1" style="background:#dc4b38;width:100%;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+"><i class="fa fanew fa-google-plus" aria-hidden="true" style="border:1px solid #dc4b38;float: left;font-size: 25px;padding-left: 20px;"></i>Sign In With Google</button>
+</div>  
+</div>
+</div>
+<div class="row reset-password" id="forget2" style="display:none;">
+<h4 id="heading" style="text-align:center;font-family:Roboto, Arial, sans-serif;    font-weight: 300;">Reset Password </h4>
+<div class="col-sm-6 col-md-6 col-lg-6" style="border-right:1px solid #eee;line-height: 15px;margin-bottom:5%"> 
+<div class="modal-body">
+<form method="post" action="">
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Email</label>
+ <input type="email" class="form-control" name="username" id="reset_email" >
+</div>
+<div class="form-group group">
+<button type="submit" class=" btn btn-raised btn-success" style="width:100%;background:#009688;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:uppercase;height: 40px;padding: 4px 0px;font-size: 20px;font-family:Roboto, Arial, sans-serif;" id="forgot-btn">Reset Password</button>  
+</div>
+<div class="signup1">
+<a class="a8" id="forget3" href="#">Back To Login !</a>
+</div>
+</form>
+</div>
+</div>
+<span class="signup-seperator">OR</span>
+<div class="col-md-5 social" style="margin-top:0%;">
+<div class="form-group group">
+<button type="button" class=" btn btn-raised" style="width:100%;background:#2e6da4;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size:22px;font-family:Roboto, Arial, sans-serif; border-radius:3px;
+"><i class="fa fanew fa-facebook" aria-hidden="true" ></i>&nbsp;
+Sign In With Facebook</button>
+</div>
+<div class="form-group group" style="margin-top:5%;">
+<button type="button" class=" btn btn-raised btn-primary1" style="background:#dc4b38;width:100%;color:white;box-shadow:0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height:50px;padding:4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius:3px;
+"><i class="fa fanew fa-google-plus" aria-hidden="true" style="border:1px solid #dc4b38;float: left;font-size: 25px;padding-left: 20px;"></i>Sign In With Google</button>
+</div>  
+</div>
+</div>
+<div class="row register" id="signup2" style="display:none;">
+<h4 id="heading" style="text-align:center;font-family:Roboto, Arial, sans-serif;font-weight: 300;">Signup Here</h4>
+<div class="col-sm-6 col-md-6 col-lg-6" style="border-right:1px solid #eee;line-height: 15px;margin-bottom:5%"> 
+<div class="modal-body">
+<form method="post" action="">
+
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Name</label>
+ <input class="form-control" id="register_name" name="name" type="text" onkeyup="if(this.value.trim()=='') {this.value='' } else{} " onblur="check_space(this.value , 'register_name_error')" >
+ <div class="msg" id="register_name_error"></div>
+</div>
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Email</label>
+ <input type="email" class="form-control" onblur="emailcheck()" name="email" id="register_email" >
+ <span id="register_email_error" style="color:red;" class="error_msg">
+ <div id="register_wait" style="display:none;width:25px;height:1px;"><img src="<?= $this->getBaseUrl() ?>/www/img/wait.gif" style="width:25px;height:25px;"></div>
+ </span><br>
+</div>
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Mobile No.</label>
+ <input type="text" class="form-control" name="phone" id="register_phone" maxlength="10" onblur="phonecheck()" >
+ <span id="register_phone_error" style="color:red;" class="error_msg">
+  <div id="register_wait" style="display:none;width:1px;height:1px;"><img src="<?= $this->getBaseUrl() ?>/www/assets/images/wait.gif" style="width:25px;height:25px;"></div>      
+</span><br>
+</div>
+<div class="form-group label-floating is-empty" style="margin:10px">
+ <label class="control-label" for="focusedInput2">Enter Password</label>
+ <input type="password" class="form-control" onkeyup="if(this.value.trim()=='') {this.value='' } else{} " name="password" id="register_password"  onblur="check_space(this.value , 'register_password_error')" >
+ <div class="msg" id="register_password_error"></div>
+</div>
+<div class="form-group group">
+<button type="submit" class=" btn btn-raised btn-success" name="regisster-btn" id="register-btn" style="width:98%;background:#009688;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 25px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+">Register</button>  
+</div>
+<div class="signup1">
+<a class="a8" id="login3" href="#">Login Here !</a>
+</div>
+</form>
+</div>
+</div>
+<span class="signup-seperator">OR</span>
+<div class="col-md-5 social" style="margin-top:11%;">
+<div class="form-group group">
+<button type="button" class=" btn btn-raised" style="width:100%;background:#2e6da4;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+"><i class="fa fanew fa-facebook" aria-hidden="true" ></i>&nbsp;
+Sign In With Facebook</button>
+</div>
+<div class="form-group group" style="margin-top:30%;">
+<button type="button" class=" btn btn-raised btn-primary1" style="background:#dc4b38;width:100%;color:white;box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);border: none;text-transform:capitalize;height: 50px;padding: 4px 0px;font-size: 22px;font-family:Roboto, Arial, sans-serif; border-radius: 3px;
+"><i class="fa fanew fa-google-plus" aria-hidden="true" style="border:1px solid #dc4b38;float: left;font-size: 25px;padding-left: 20px;"></i>Sign In With Google</button>
+</div>  
+</div>
+</div>    
+</div>
+</div>
+</div>
+ <div class="container">
+      <!-- view content start -->
+      <?=$this->layout()->content ?>
+      <!-- view content ends -->
+ </div>     
+<footer id="footer" class="col-sm-12 col-md-12 col-lg-12 hidden-xs" style="margin-bottom:0px;">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <ul style="border-bottom: 1px solid #eee; ">
+            <li class="services2-item" style="border-bottom:none;min-height:40px;">
+               <div class="service-wapper" style="padding-top:20px;padding-left:50px;">
+                 <ul style="display:inline-flex;padding:2px;">
+                   <li style="margin-left:20px;"><a href="<?=$this->getBaseUrl() ?>/index/privacy-policy">Policies</a></li>
+                   <li style="margin-left:20px;"><a href="#">About Us</a></li>
+                   <li style="margin-left:20px;"><a href="#">Terms & Condition</a></li>
+                   <li style="margin-left:20px;"><a href="#">Customer Support</a></li>
+                 </ul> 
+               </div>
+            </li>
+        </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6">
+        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline" style="float:right;margin-right:40px;margin-top:20px;">
+          <li> Keep In Touch:</li>
+          <li> <a href="https://www.facebook.com/Laptop-Engineers-724478260981877/" target="_blank"><i class="fa fa-facebook"></i></a></li> 
+          <li> <a href="https://twitter.com/laptopengineerz" target="_blank"><i class="fa fa-twitter"></i></a></li> 
+          <li> <a href="https://plus.google.com/+LaptopEngineers" target="_blank"><i class="fa fa-google-plus"></i></a></li>  
+          <li> <a href="https://www.linkedin.com/in/laptop-engineers-185a3899/" target="_blank"><i class="fa fa-linkedin"></i></a></li> 
+          <li> <a href="https://www.youtube.com/channel/UCC8LznHl1-5wcg3LW73ignA" target="_blank"><i class="fa fa-youtube"></i></a></li> 
+        </ul>
+     </div>         
+    </div>
+   <!-- <div id="footer-menu-box">
+     <p class="text-center">Copyrights &#169; 2016 LAPTOP ENGINEERS RETAIL PVT. LTD. All Rights Reserved. Designed by <b style="color:#f36; font-weight:400;">Ashish & Brijesh</b></p>
+   </div> -->
+  </footer>
+    <a href="#" class="scroll_top" title="Scroll to Top" style="display: block;">Scroll</a>
+ </body>
+</html>
+   
+<script>
+                
+    $(document).ready(function(){
+        
+        var mbaseUrl=$('#baseUrl').attr('value');
+        $("#signup4").click(function(){
+            $("#signup2").show();
+            $("#login2").hide();
+            $("#forget2").hide();
+            $("#exampleModal").css('top:2%');
+            
+        });
+
+        $("#login3").click(function(){
+            $("#login2").show();
+            $("#signup2").hide();
+            $("#forget2").hide();
+        });
+
+        $("#forget").click(function(){
+            $("#forget2").show();
+            $("#signup2").hide();
+            $("#login2").hide();
+        });
+        $("#forget3").click(function(){
+            $("#login2").show();
+            $("#forget2").hide();
+            $("#signup2").hide();
+            
+        });
+
+        $('#login-form').on('submit', function(e){
+
+            $('#loader4').css('display','block');
+            e.preventDefault();
+            var email = $('#login_email').val();
+            var password = $('#login_password').val();
+            // alert('hi');
+            if(email == '') {
+                $('#email_error_js').html('Email field should not be empty');
+                $('.loader').css('display','none');
+            }
+            else if(password == '') {
+                $('#password_error_js').html('Password field should not be empty');
+                $('.loader').css('display','none');
+            }
+            else {
+                var data = {
+                    email : email,
+                    password : password
+                }
+                // console.log(data);
+                $.ajax({
+                    url: mbaseUrl+'/index/login',
+                    type: 'POST',
+                    data: data,
+                    success:function(data) {
+                        var data = $.parseJSON(data); 
+                        if(data.status==200)
+                        {
+                            $('#loader4').css('display','none');
+                            window.location.reload();
+                            
+                        }else{
+
+                           $('#loader4').css('display','none');
+                           $('#login_password_error').html("Invalid Login Details !!");
+                       }
+                       // $('#loader4').css('display','none');
+                    }
+                });
+            }
+
+        });
+
+
+        $('#register-btn').click(function(){   
+            
+            var email = $('#register_email').val();
+            var password = $('#register_password').val();
+            var name = $('#register_name').val();
+            var phone = $('#register_phone').val();
+
+            if(name == '') {
+                $('#register_name_error').html('Name field should not be empty');
+                return;
+            }
+            else {
+                $('#register_name_error').html('');
+            }
+            if(email == '') {
+                $('#register_email_error').html('Email field should not be empty');
+                return;
+            }
+            else {
+                $('#register_email_error').html('');
+            }
+            if(phone == '') {
+                $('#register_phone_error').html('Mobile no field should not be empty');
+                return;
+            }
+            else {
+                $('#register_phone_error').html('');
+            }
+            if(password == '') {
+                $('#register_password_error').html('Password field should not be empty');
+                return;
+            }
+            else {
+                $('#register_password_error').html('');
+            }
+
+            $('#loader4').css('display','block');
+
+            var data = {
+                name : name,
+                email : email,
+                password : password,
+                phone : phone
+            }
+            $.ajax({
+                url: mbaseUrl+'/index/register',
+                type: 'POST',
+                data: data,
+                success:function(data) {
+                    var data = $.parseJSON(data); 
+                    if(data.status==200)
+                    {
+                        $('#loader4').css('display','none');
+                        window.location.href = mbaseUrl;
+                        
+                    }else{
+                     
+                       $('#password_error_js').html(data.message);
+                   }
+                   // $('.loader').css('display','none');
+                }
+            });
+                        
+        });
+
+   
+
+    $('#forgot-btn').click(function(){
+
+        var email = $('#reset_email').val();
+        var mbaseUrl=$('#baseUrl').attr('value');
+        var data = {
+                    email : email
+                }
+                $.ajax({
+                    url: mbaseUrl+'/index/forget',
+                    type: 'POST',
+                    data: data,
+                    success:function(data) {
+                        var data = $.parseJSON(data); 
+                        if(data.status==200)
+                        {
+                            var returnUrl = "/<?=  isset($_GET['return']) ? $_GET['return'] : ''    ?>";
+                             $('#reset_email_error_js').html(data.message);
+                            // window.location.href = mbaseUrl+returnUrl;
+                            
+                        }else{
+                         
+                           $('#reset_email_error_js').html(data.message);
+                       }
+                    }
+                });
+        });
+
+ });
+
+</script>
+ 
+   <script>
+    var count=1;
+    var min_length = 1;
+    var start=0;
+    function emailcheck() {
+
+        $('#register_wait').css('display','block');
+        var email=$('#register_email').val();
+        
+        if(!(email.indexOf('@')==-1))
+            {
+                start=1;
+            }
+        if(start==1){
+           
+            var keyword = $('#register_email').val();
+            if(keyword.length >= min_length) {
+                var mbaseUrl=$('#baseUrl').attr('value');
+                $.ajax({
+                    url: mbaseUrl+'/index/emailcheck',
+                    type: 'POST',
+                    data: {keyword:keyword },
+                    success:function(data) {
+                        var data = $.parseJSON(data); 
+                        $('#register_wait').css('display','none');
+                        if(data.status==200)
+                        {
+                            $('#register_email_error').html("email already exist !!");
+                            $("#register_email_error").focus().css({ "color": "red"});
+                            $('#register-btn').prop('disabled', true);
+                            
+                        }if(data.status==204){
+                         
+                            $("#register_email_error").focus().css({ "color": "green"});
+                            $('#register_email_error').html(".");
+                            $('#register-btn').prop('disabled', false);
+                       }
+                    }
+                });
+            } else {
+                $('#register_email_error').hide();
+            }
+        }
+    }
+</script>
+
+<script type="text/javascript">
+  function addToCart() {
+    // alert("helo");
+    $('.loader').css('display','block');
+     var formData = {
+            'product_id'    : $('#product_id').val(),
+            'in_stock'      : 1
+        };  
+        // console.log(formData); 
+        // alert('vikas');
+        var mbaseUrl=$('#baseUrl').attr('value');
+        $.ajax({
+        type        : 'POST',
+        url         : mbaseUrl+'/ajax/add-to-cart',
+        data        : formData,
+        dataType    : 'json',
+        encode      : true
+        }).done(function(data) {
+    if (data.success==true) 
+        {
+            var atrib='<a type="button" class="btn w3ls-cart w3ls-cart-like cartbtn" style="background:#333;color:white;width:100%;text-transform:uppercase;border: none;height:50px;padding:10px;font-size:20px;margin:0px 1px;box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3);border-radius:0px !important;" id="add_to_cart_button" href="<?= $this->getBaseUrl()?>/shopping-cart" ><i class="fa fa-cart-plus" aria-hidden="true"></i> Go To Cart</a>'
+            $('.cart_count').html(parseInt($('.cart_count').html())+1);
+             $('.cart_button').hide();
+             $('.cartbtn').html(atrib);
+             makeToaster('true','success','Product added to cart successfully');
+
+        }
+    else if(data.success==false)
+        {
+        makeToaster('false','warning','Please Login');
+        }
+
+        $('.loader').css('display','none');
+    }).fail(function(data)
+        {
+       makeToaster('false','Error','Please Login');
+        });
+}
+
+function buyNow() {
+    var formData = {
+            'product_id'      : $('#product_id').val(),
+            'in_stock'      : 1,
+            'quantity'      : 1
+        };   
+        var mbaseUrl=$('#baseUrl').attr('value');
+        $.ajax({
+        type        : 'POST',
+        url         : mbaseUrl+'/ajax/add-to-cart',
+        data        : formData,
+        dataType    : 'json',
+        encode      : true
+        }).done(function(data) {
+    if (data.success==true) 
+        {
+          $('.cart_count').html(parseInt($('.cart_count').html())+1);
+          window.location.href = mbaseUrl+'/shopping-cart';
+        }
+    else if(data.success==false)
+        {
+        alert('Error !! please login to continue..')
+        }
+    }).fail(function(data)
+        {
+        console.log(data);
+        });
+}
+</script>
+
+<script type="text/javascript">
+ var pcount=1;
+ var pmin_length = 9;
+ var pstart=0;
+ function phonecheck() {
+    $('#register_wait').css('display','block');
+    var phone=$('#register_phone').val();
+        
+    var mobile = $('#register_phone').val();
+    if (mobile.length >= pmin_length) {
+        var mbaseUrl=$('#baseUrl').attr('value');
+        $.ajax({
+            url: mbaseUrl+'/index/phonecheck',
+            type: 'POST',
+            data: {mobile:mobile },
+            success:function(data)
+            {
+              var data = $.parseJSON(data); 
+              $('#register_wait').css('display','none');  
+              if(data.status==200)
+              {
+                $('#register_phone_error').html("Number already registered !!");
+                $("#register_phone_error").focus().css({ "color": "#FF1F2E"});
+                $('#register-btn').prop('disabled', true);
+              }
+              if(data.status==204){
+                $('#register_phone_error').html(".");
+                $("#register_phone_error").focus().css({ "color": "green"});
+                $('#register-btn').prop('disabled', false);
+              }
+            }
+        });
+    } 
+    else {
+        $('#register_phone_error').hide();
+    }
+        
+ }  
+</script>
+<script>
+    function check_space(input_val , div_id)
+    {
+        if(input_val.trim().length==0)
+        {
+            $("#"+div_id).html("Please Enter The Value");
+            $("#register-btn").prop('disabled' , true);
+            
+            
+        }
+        else{
+            $("#"+div_id).empty();
+            $("#register-btn").prop('disabled' , false);
+        }
+        
+    }
+</script>
+
+<script>
+  (function () {
+
+    var $button = $("<div id='source-button' class='btn btn-primary btn-xs'>&lt; &gt;</div>").click(function () {
+      var index = $('.bs-component').index($(this).parent());
+      $.get(window.location.href, function (data) {
+        var html = $(data).find('.bs-component').eq(index).html();
+        html = cleanSource(html);
+        $("#source-modal pre").text(html);
+        $("#source-modal").modal();
+      })
+
+    });
+
+    $('.bs-component [data-toggle="popover"]').popover();
+    $('.bs-component [data-toggle="tooltip"]').tooltip();
+
+    $(".bs-component").hover(function () {
+      $(this).append($button);
+      $button.show();
+    }, function () {
+      $button.hide();
+    });
+
+    function cleanSource(html) {
+      var lines = html.split(/\n/);
+
+      lines.shift();
+      lines.splice(-1, 1);
+
+      var indentSize = lines[0].length - lines[0].trim().length,
+          re = new RegExp(" {" + indentSize + "}");
+
+      lines = lines.map(function (line) {
+        if (line.match(re)) {
+          line = line.substring(indentSize);
+        }
+
+        return line;
+      });
+
+      lines = lines.join("\n");
+
+      return lines;
+    }
+
+    $(".icons-material .icon").each(function () {
+      $(this).after("<br><br><code>" + $(this).attr("class").replace("icon ", "") + "</code>");
+    });
+
+  })();
+
+</script>
+
+<script src="//fezvrasta.github.io/snackbarjs/dist/snackbar.min.js"></script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/noUiSlider/6.2.0/jquery.nouislider.min.js"></script>
+<script>
+  $(function () {
+    $.material.init();
+    $(".shor").noUiSlider({
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+
+    $(".svert").noUiSlider({
+      orientation: "vertical",
+      start: 40,
+      connect: "lower",
+      range: {
+        min: 0,
+        max: 100
+      }
+    });
+  });
+
+
+
+  function makeToaster(priority,title,message) {
+    var codetmpl = "<code>%codeobj%</code><br><code>%codestr%</code>";
+
+    var options =
+                {
+                    priority : priority || null,
+                    title    : title || null,
+                    message  : message || 'A message is required'
+                };
+
+                if (options.priority === '<use default>')
+                {
+                    options.priority = null;
+                }
+
+                var codeobj = [];
+                var codestr = [];
+
+                var labels = ['message', 'title', 'priority'];
+                for (var i = 0, l = labels.length; i < l; i += 1)
+                {
+                    if (options[labels[i]] !== null)
+                    {
+                        codeobj.push([labels[i], "'" + options[labels[i]] + "'"].join(' : '));
+                    }
+
+                    codestr.push((options[labels[i]] !== null) ? "'" + options[labels[i]] + "'" : 'null');
+                }
+
+                if (codestr[2] === 'null')
+                {
+                    codestr.pop();
+                    if (codestr[1] === 'null')
+                    {
+                        codestr.pop();
+                    }
+                }
+
+                codeobj = "$.toaster({ " + codeobj.join(", ") + " });"
+                codestr = "$.toaster(" + codestr.join(", ") + ");"
+
+                // $('#toastCode').html(codetmpl.replace('%codeobj%', codeobj).replace('%codestr%', codestr));
+                $.toaster(options);
+  }
+</script>
+<script>
+ $(document).ready(function(){
+    var mbaseUrl=$('#baseUrl').attr('value');
+    $('input.typeahead').typeahead({
+        name: 'typeahead',
+        remote: mbaseUrl+'/ajax/search?key=%QUERY',
+        listeners: {
+           select: function(value){
+            alert(value);
+            console.log(value,'dsfsdf');
+           }
+        }
+    });
+
+    $('.typeahead').on('typeahead:selected', function(event, datum) {
+      var v = datum.value;
+       window.location.href = mbaseUrl+'/product/search?q='+v;
+
+    });
+ });
+</script>
+<script>
+    $('#exampleModal').on('shown.bs.modal', function (e) {
+      $(".option6").css({ opacity: 0 });
+    })
+
+    //when modal closes
+    $('#exampleModal').on('hidden.bs.modal', function (e) {
+      $(".option6").css({ opacity: 1 });
+    })
+</script>
+

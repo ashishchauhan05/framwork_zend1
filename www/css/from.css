@@ -1,0 +1,402 @@
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+/* reset */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*end reset*/
+/****-----start-body----****/
+body{
+	background-color:#606e80;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	position:relative;
+ 	font-family: 'Roboto', sans-serif;
+}
+.login-form {
+	background: #fff;
+	min-height: 562px;
+	width: 30%;
+	margin: 9% auto 4% auto;
+	position: relative;
+	border-bottom-left-radius: 10px;
+	-webkit-bottom-left-radius: 10px;
+	-moz-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-bottom-right-radius: 10px;
+}
+.head {
+	background: url(../images/branded-colors.png) repeat;
+	height: 12px;
+	position: absolute;
+	top: -2%;
+	left: 0%;
+	width: 100%;
+	border-top-left-radius: 18px;
+	-webkit-border-top-left-radius: 18px;
+	-moz-border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+	-webkit-border-top-right-radius: 18px;
+	-moz-border-top-right-radius: 18px;
+	margin: 0 auto;
+}
+.head img {
+	width: 100%;
+}
+.head-info h1 {
+	padding: 1em;
+	text-align: center;
+	font-weight: 300;
+	font-size: 2em;
+	color: #b8b8b8;
+	background: #f7f7f7;
+}
+form {
+	padding: 8% 6% 7%;
+}
+.social-icons p {
+	text-align: center;
+	color: #B5B5B5;
+	margin-bottom: 1.5em;
+	font-size: 20px;
+	font-weight: 200;
+}
+form li{
+	border: 1px solid #ebebeb;
+	border-bottom: 5px solid#ebebeb;
+	border-right: 2px solid#ebebeb;
+	border-left: 2px solid#ebebeb;
+	list-style: none;
+	margin-bottom: 25px;
+	width: 100%;
+	background: none;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+}
+.icon{
+	background:url(../images/icons.png)  no-repeat 0px 0px;
+	height:30px;
+	width:30px;
+	display: block;
+	float:left;
+	margin:7px -11px 0px 0px
+}
+.user{
+	background: url(../images/icons.png) no-repeat 12px 11px;
+}
+.lock{
+	background: url(../images/icons.png) no-repeat -17px 11px;
+}
+input[type="text"], input[type="password"] {
+	width: 80%;
+	padding: 1em 0em 1em 1.7em;
+	color: #C9C9C9;
+	font-size: 18px;
+	outline: none;
+	background: none;
+	border: none;
+	font-weight: 100;
+}
+input[type="submit"]{
+	font-size: 30px;
+	display: inline-block;
+	font-weight: 100;
+	color: #fff;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	cursor: pointer;
+	outline: none;
+	padding: 6px 6px;
+	margin-top: 3px;
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	border: none;
+	border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	background: #f27669;
+	border-bottom: 5px solid#d96a5d;
+}
+input[type="submit"]:hover {
+	background: #d96a5d;
+	border-bottom: 5px solid#f27669;
+}
+.p-container{
+	margin-top:2em;
+}
+ul.facebook {
+	float: left;
+	background: #578ee8;
+	color: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-left: 35px;
+	padding: 8px 42px;
+}
+ul.facebook:hover {
+	background: #1E4078;
+}
+ul.facebook li {
+	display: inline-block;
+	vertical-align: middle;
+}
+ul.facebook li img {
+	margin: 8px 18px 0 0;
+}
+ul.twitter {
+	float: right;
+	background: #5dc2e6;
+	color: #fff;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	margin-right: 35px;
+	padding: 15px 38px;
+}
+ul.twitter:hover {
+	background: #3396B9;
+}
+ul.twitter li {
+	display: inline-block;
+	vertical-align: middle;
+}
+ul.twitter li img {
+	margin: 8px 18px 0 0;
+}
+.copy-right {
+	position: absolute;
+	bottom:-16%;
+	left: 43.7%;
+}
+.copy-right p {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	padding-bottom: 2em;
+}
+.copy-right p a {
+	font-size: 1em;
+	color:#FF8E03;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.copy-right p a:hover {
+	color:#fff;
+}
+/*-----start-responsive-design------*/
+@media (max-width:1280px){
+	ul.facebook {
+		margin-left: 31px;
+		padding: 8px 22px;
+	}
+	ul.twitter {
+		margin-right: 31px;
+		padding: 15px 22px;
+	}
+	.login-form {
+		min-height: 547px;
+	}
+}
+@media (max-width:1366px){
+		ul.facebook {
+		margin-left: 31px;
+		padding: 8px 22px;
+	}
+	ul.twitter {
+		margin-right: 31px;
+		padding: 15px 22px;
+	}
+	.login-form {
+		min-height: 547px;
+	}
+}
+@media (max-width:1040px){
+		ul.facebook {
+		padding: 7px 30px;
+	}
+	ul.twitter {
+		padding: 14px 28px;
+	}
+	.login-form {
+		min-height: 556px;
+	}
+	ul.facebook li img {
+		margin: 8px 8px 0 0;
+	}
+	ul.twitter li img {
+		margin: 8px 8px 0 0;
+	}
+	.login-form {
+		width: 43%;
+	}
+}
+@media (max-width:1024px){
+.login-form  {
+		margin:8% auto 0;
+		width:45%;
+	}
+	.copy-right {
+		left: 41%;
+		bottom:-18%;
+	}
+	ul.facebook {
+		padding: 8px 35px;
+	}
+	ul.twitter {
+		padding: 15px 35px;
+	}
+}
+@media (max-width:768px){
+	.login-form  {
+		margin:12% auto 0;
+		width: 58%;
+	}
+	.copy-right {
+		left:38%;
+		bottom:-14%;
+	}
+}
+@media (max-width:670px){
+	.login-form {
+		width: 64%;
+	}
+}
+@media (max-width:640px){                                  
+	.login-form  {
+		margin:13% auto 0;
+		width:70%;
+	}
+	.copy-right {
+		left:36%;
+		bottom:-18%;
+	}
+}
+@media (max-width:480px){                                  
+	.login-form  {
+		margin:20% auto 0;
+		width:90%;
+	}
+	.copy-right {
+		left:30%;
+		bottom:-17%;
+	}
+	
+}
+@media (max-width:320px){                                  
+	.login-form  {
+		margin:20% auto 0;
+		width:95%;
+	}
+	.head-info h1 {
+		font-size: 1.6em;
+	}
+	form{
+		padding: 7% 1.5em; 
+	}
+	form li{
+		margin-top:0px;
+		margin-bottom: 18px;
+	}
+	
+	input[type="text"], input[type="password"]{
+		font-size: 15px;
+		padding: 0.8em 1em 0.5em 1em;
+		width: 77%;
+	}
+	input[type="submit"] {
+		float: none;
+		font-size: 15px;
+		padding: 10px 10px;
+		width: 100%;
+		 margin-left: 0%; 
+	}
+	.head{
+		top: -1.9%;
+		left: 0%;
+	}
+	.head img {
+		width:69%;
+	}
+	.user {
+		background: url(../images/icons.png) no-repeat 12px 4px;
+	}
+	.lock {
+		background: url(../images/icons.png) no-repeat -20px 3px;
+	}
+	.p-container .checkbox {
+		float: none;
+		text-align: center;
+	}
+	.p-container{
+		margin-top: 0;
+	}
+	.icon{
+		margin:6px -11px 0px 0px;
+	}
+	.p-container .checkbox i {
+		position: absolute;
+		top: 18px;
+		left: 43px;
+	}
+	.copy-right {
+		left:20%;
+		bottom:-10%;
+	}
+	ul.twitter {
+		padding: 9px 9px;
+	}
+	ul.facebook {
+		padding: 2px 9px;
+	}
+	ul.facebook li img {
+		margin: 5px 0px 0px 6px;
+		width: 50%;
+	}
+	ul.twitter li img {
+		margin: 0px 0px 0px 2px;
+		width: 62%;
+		vertical-align: middle;
+	}
+	.login-form {
+		min-height: 388px;
+	}
+	.social-icons p {
+		font-size: 0.875em;
+	}
+	.copy-right p {
+		padding-bottom: 0.5em;
+	}
+}
+/*-----End-responsive-design------*/

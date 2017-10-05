@@ -1,0 +1,58 @@
+.piclist{
+        margin-top: 30px;
+    }
+    .nav-tabs>.active
+    {
+      border-bottom: 2px solid #607D8B;
+    }
+    .piclist li{
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+    }
+    .piclist li img{
+        width: 100%;
+        height: auto;
+    }
+    .picZoomer-pic-wp,
+    .picZoomer-zoom-wp{
+        border: 1px solid #fff;
+    }
+    .nav-tabs{
+    background:white ;
+  }
+  .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus{
+    color:black !important;
+  }
+  #p-info{
+    box-shadow: none;
+    /*vertical-align: middle;*/
+    text-align: center;
+    background-color: #16be48;
+    margin-left: 15px;
+    width:50px;
+  }
+  #p-info1{
+    box-shadow: none;
+    vertical-align: middle;
+    background-color: #fff;
+    /*margin-left: 15px;*/
+    color:#878787;
+    font-size: 16px;
+    /*width:35px;*/
+  }
+  .deliver{
+    margin-top: 25px;
+  }
+  .productpic:hover{
+    border:2px solid #009688 !important;
+  }
+  .productpic:active , .productpic:visited{
+    border:2px solid #009688 !important;
+  }
+  .nav-tabs{
+    background:white ;
+  }
+  .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus{
+    color:black !important;
+  }
